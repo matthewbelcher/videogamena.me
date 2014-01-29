@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+  <head>
+    <title>The Video Game Name Generator</title>
+    <link rel="stylesheet" href="/vgng.css" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="vgng.ico">
+
+
+    <script type="text/javascript" src="/jquery.js"></script>
+
+    <script type="text/javascript" src="/vgng.js"></script>
+
+    <!-- This conditional is for IE8 and IE6 and earlier- 8 needs that display:table -->
+    <!--[if !IE 7]>
+        <style type="text/css">
+            #wrap {display:table;height:100%}
+        </style>
+    <![endif]-->
+
+  </head>
+  <body>
+  <div id="wrap">
+    <div id="container">
+      <div id="pagetitle">
+        <img class="centerimage" id="header_image" alt="The Video Game Name Generator!" title="The Video Game Name Generator!" width="287" height="330" border="0" src="/the-video-game-generator.gif">
+      </div>
+      <h1><div class="size1 mainnew center" id="video_game_name0">Loading...</div></h1>
+      <div class="centerimage generatebutton" id="new_name" onClick="" onMouseOver="document.generate_button_image.src='/generate-button-selected.gif';" onMouseOut="document.generate_button_image.src='/generate-button-unselected.gif';" onMouseDown="document.generate_button_image.src='/generate-button-unselected.gif';" onMouseUp="document.generate_button_image.src='/generate-button-selected.gif';">
+        <img name="generate_button_image" alt="Make me another name!" width="287" height="55" border="0" src="/generate-button-unselected.gif">
+      </div>
+
+      <br><br><br>
+      <div class="centerimage tweeticon" id="twitter">
+        <a id="twitter_link" href="http://twitter.com/" target="_blank">
+          <img alt="Twitter Home" width="132" height="30" border="0" src="/twitter.gif">
+        </a>
+      </div>
+      <div class="centerimage tweetbutton" onMouseOver="document.tweet_button_image.src='/tweet-button-selected.gif';" onMouseOut="document.tweet_button_image.src='/tweet-button-unselected.gif';" onMouseDown="document.tweet_button_image.src='/tweet-button-unselected.gif';" onMouseUp="document.tweet_button_image.src='/tweet-button-selected.gif';">
+        <a id="tweet" href="http://twitter.com/share" class="twitter-share-button" target="_blank">
+          <img name="tweet_button_image" alt="Tweet this name!" width="199" height="28" border="0" src="/tweet-button-unselected.gif">
+        </a>
+        <!--	<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script> -->
+      </div>
+      <div id="androidlink" class="center">
+	    Try the apps! <a href="https://play.google.com/store/apps/details?id=com.criptych.vgng">Android</a> | <a href="http://apps.microsoft.com/windows/app/video-game-name-generator/3fcf26d2-73d0-48cd-ac0e-ce2f2d322164">Windows 8</a> | <a href="http://www.windowsphone.com/s?appid=56d8d8b8-a2ec-44c1-9314-9370537fab4e">Windows Phone</a>
+	  </div>
+    </div>
+  </div>  <!-- end wrap div -->
+
+  <div id="footernew">
+    <div id="footer-left">
+      <form>
+        <input type="checkbox" checked="checked" id="similar_terms"/>&nbspDon't pick similar terms (e.g. Nighttime Night Nightmare)
+      </form>
+    </div>
+    <div id="footer-right">
+      <a href="about.html">About</a>
+    </div>
+  </div>
+
+<!-- preload button highlighted images -->
+  <div class="hidden">
+    <!--	<script type="text/javascript" 
+      function preloader()
+      {
+        if (document.images)
+        {
+           var img1 = new Image();
+           var img2 = new Image();
+
+           img1.src = "/generate-button-selected.gif";
+           img2.src = "/tweet-button-selected.gif";
+        }
+      }
+
+      addLoadEvent(preloader);
+    </script> -->
+
+  </body>
+</html>
